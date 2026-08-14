@@ -23,6 +23,13 @@ Still worth adding when known: the area name and PIN code (append to the address
 in the contact list and to `addressLocality` / `postalCode` in the JSON-LD block),
 and the canonical site URL in that same JSON-LD `url` field.
 
+## Photo gallery
+
+Copy clinic photos into `assets/img/` with the filenames listed in
+[`assets/img/README.md`](assets/img/README.md) and the "A look inside" section
+appears by itself. Missing photos are skipped; if there are none, the section
+and its nav link stay hidden, so there is never a broken tile on the page.
+
 ## The WhatsApp booking form
 
 The `#book` section collects patient details and hands them to WhatsApp as a

@@ -54,6 +54,55 @@
     revealables.forEach(function (el) { el.classList.add("is-visible"); });
   }
 
+  /* Photo gallery ------------------------------------------------------
+     Each figure hides itself if its photo is missing, and the whole section
+     stays hidden until at least one photo loads — so the gallery can ship
+     before any photos exist without ever showing a broken tile. */
+  var gallerySection = document.getElementById("gallery");
+  var galleryGrid = document.getElementById("gallery-grid");
+
+  if (gallerySection && galleryGrid) {
+    var shots = galleryGrid.querySelectorAll(".shot");
+    var pending = shots.length;
+    var loaded = 0;
+
+    var settle = function () {
+      pending--;
+      if (pending > 0) return;
+
+      if (loaded === 0) return;             // nothing to show; stay hidden
+      gallerySection.hidden = false;
+      galleryGrid.classList.add("count-" + loaded);
+
+      // Tiles are half-width, so an odd count would leave a hole in the last
+      // row. Promote the first surviving photo to full width to absorb it.
+      var visible = galleryGrid.querySelectorAll(".shot:not([hidden])");
+      Array.prototype.forEach.call(visible, function (shot) {
+        shot.classList.remove("shot-wide");
+      });
+      if (loaded % 2 === 1) visible[0].classList.add("shot-wide");
+
+      var navLinks = document.querySelectorAll(".nav-gallery");
+      Array.prototype.forEach.call(navLinks, function (a) { a.hidden = false; });
+    };
+
+    Array.prototype.forEach.call(shots, function (shot) {
+      var img = shot.querySelector("img");
+      if (!img) { shot.hidden = true; settle(); return; }
+
+      var ok = function () { loaded++; settle(); };
+      var fail = function () { shot.hidden = true; settle(); };
+
+      if (img.complete) {
+        // Cached or already resolved by the time this script runs.
+        (img.naturalWidth > 0 ? ok : fail)();
+      } else {
+        img.addEventListener("load", ok, { once: true });
+        img.addEventListener("error", fail, { once: true });
+      }
+    });
+  }
+
   /* WhatsApp booking form --------------------------------------------- */
   var CLINIC_WA = "918281447235";   // country code + number, digits only
   var form = document.getElementById("booking-form");
