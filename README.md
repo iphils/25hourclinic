@@ -69,22 +69,49 @@ python3 -m http.server 8000
 # then open http://localhost:8000
 ```
 
-## Publish to GitHub Pages
+## Live site
+
+- Repo: <https://github.com/iphils/25hourclinic>
+- Pages: builds from `main` / root, custom domain `25hourclinic.org` (set via the `CNAME` file)
+
+Every `git push` to `main` rebuilds and redeploys within a minute.
+
+## Custom domain DNS
+
+At the registrar for `25hourclinic.org`, replace the existing records with:
+
+| Type | Name | Value |
+| --- | --- | --- |
+| A | `@` | `185.199.108.153` |
+| A | `@` | `185.199.109.153` |
+| A | `@` | `185.199.110.153` |
+| A | `@` | `185.199.111.153` |
+| CNAME | `www` | `iphils.github.io.` |
+
+Delete any pre-existing A / CNAME / parking records for `@` and `www` first, and
+leave MX records alone if email is on the domain. Once it propagates, tick
+**Enforce HTTPS** in Settings → Pages (GitHub issues the certificate itself; it
+can take up to an hour after DNS resolves).
+
+Verify with:
 
 ```bash
-git init
-git add .
-git commit -m "25th Hour Clinic website"
-git branch -M main
-git remote add origin git@github.com:<user>/<repo>.git
-git push -u origin main
+python3 -c "import socket;print(socket.gethostbyname_ex('25hourclinic.org'))"
+curl -sSI https://25hourclinic.org | head -1
 ```
 
-Then in the repo: **Settings → Pages → Source: Deploy from a branch → `main` / `root`**.
-The site goes live at `https://<user>.github.io/<repo>/` within a minute or two.
+## Publishing a change
 
-For a custom domain (e.g. `25thhourclinic.in`), add a `CNAME` file containing the
-bare domain, and point the DNS `A` records at GitHub's Pages IPs.
+```bash
+git add -A
+git commit -m "Describe the change"
+git push
+```
+
+That is the whole deploy. Check the build with `gh api repos/iphils/25hourclinic/pages/builds/latest --jq .status`.
+
+Do not delete the `CNAME` file — GitHub reads the custom domain from it, and
+removing it resets Pages back to the `github.io` URL.
 
 ## Design notes
 
