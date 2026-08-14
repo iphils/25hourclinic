@@ -4,8 +4,12 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>25th Hour Clinic — Care Beyond the Clock | Thrippunithura</title>
-<meta name="description" content="25th Hour Clinic offers physician consultation and doctor home care visits for palliative patients at affordable prices. Book an appointment with our MBBS &amp; MD doctors.">
+<meta name="description" content="General physician clinic in Thrippunithura, Kochi. Doctor consultation and home visits for palliative and bed-bound patients across Ernakulam. Open all days, 9 AM – 9 PM. Call +91 82814 47235.">
 <meta name="theme-color" content="#D97757">
+<meta name="geo.region" content="IN-KL">
+<meta name="geo.placename" content="Thrippunithura, Kochi, Ernakulam, Kerala">
+<meta name="geo.position" content="9.9456521;76.3485661">
+<meta name="ICBM" content="9.9456521, 76.3485661">
 
 <!-- Open Graph / social -->
 <meta property="og:type" content="website">
@@ -43,13 +47,69 @@
     "addressCountry": "IN"
   },
   "geo": { "@type": "GeoCoordinates", "latitude": 9.9456521, "longitude": 76.3485661 },
+  "image": "https://25hourclinic.org/assets/img/clinic-front.jpg",
+  "slogan": "Care Beyond the Clock",
+  "priceRange": "₹",
+  "currenciesAccepted": "INR",
+  "isAcceptingNewPatients": true,
   "openingHoursSpecification": [{
     "@type": "OpeningHoursSpecification",
     "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
     "opens": "09:00",
     "closes": "21:00"
   }],
-  "medicalSpecialty": ["PrimaryCare", "PalliativeCare"]
+  "medicalSpecialty": ["PrimaryCare", "PalliativeCare"],
+  "areaServed": [
+    { "@type": "City", "name": "Thrippunithura" },
+    { "@type": "City", "name": "Kochi" },
+    { "@type": "AdministrativeArea", "name": "Ernakulam" }
+  ],
+  "availableService": [
+    { "@type": "MedicalProcedure", "name": "Physician consultation", "description": "General medicine consultation at the clinic." },
+    { "@type": "MedicalProcedure", "name": "Doctor home visit", "description": "A doctor visits the patient at home, by appointment." },
+    { "@type": "MedicalProcedure", "name": "Palliative home care", "description": "Comfort-focused care, symptom and pain relief for patients with advanced illness." }
+  ],
+  "employee": [
+    { "@type": "Physician", "name": "Dr. Ammu Benoy", "jobTitle": "Consultant Physician",
+      "medicalSpecialty": "InternalMedicine",
+      "hasCredential": { "@type": "EducationalOccupationalCredential", "credentialCategory": "degree", "name": "MBBS, MD General Medicine" } },
+    { "@type": "Physician", "name": "Dr. Limiya Chiramel Louis",
+      "medicalSpecialty": "PrimaryCare",
+      "hasCredential": { "@type": "EducationalOccupationalCredential", "credentialCategory": "degree", "name": "MBBS" } },
+    { "@type": "Physician", "name": "Dr. Paul Prince Pokkatt",
+      "medicalSpecialty": "PrimaryCare",
+      "hasCredential": { "@type": "EducationalOccupationalCredential", "credentialCategory": "degree", "name": "MBBS" } }
+  ],
+  "potentialAction": {
+    "@type": "ReserveAction",
+    "target": { "@type": "EntryPoint", "urlTemplate": "https://wa.me/918281447235", "actionPlatform": "https://schema.org/MobileWebPlatform" },
+    "result": { "@type": "Reservation", "name": "Appointment request" }
+  }
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    { "@type": "Question", "name": "Where is 25th Hour Clinic located?",
+      "acceptedAnswer": { "@type": "Answer", "text": "25th Hour Clinic is at Pokkattu Building, Main Road, opposite Nadamel Church, Thrippunithura, Kochi, Kerala. It is easy to reach from Hill Palace, Eroor, Petta, Vyttila and Irumpanam." } },
+    { "@type": "Question", "name": "What are your consultation timings?",
+      "acceptedAnswer": { "@type": "Answer", "text": "The clinic is open all days from 9:00 AM to 9:00 PM, including Sundays. Walk-in consultations are welcome; home visits are arranged by appointment." } },
+    { "@type": "Question", "name": "Do you provide doctor home visits in Thrippunithura and Kochi?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Yes. A doctor visits the patient at home, by appointment, across Thrippunithura and nearby parts of Kochi and Ernakulam. Home visits suit palliative patients, bed-bound and elderly patients, people recovering after hospital discharge, and anyone who cannot travel to a clinic. Call +91 82814 47235 to check whether your location is covered." } },
+    { "@type": "Question", "name": "How do I book an appointment?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Call or WhatsApp +91 82814 47235, or use the booking form on 25hourclinic.org, which opens WhatsApp with your details already written out for the clinic." } },
+    { "@type": "Question", "name": "Do I need an appointment to see a general physician?",
+      "acceptedAnswer": { "@type": "Answer", "text": "No. You can walk in during consultation hours. Booking ahead means less waiting, and it is required for home visits." } },
+    { "@type": "Question", "name": "What does a palliative home care visit include?",
+      "acceptedAnswer": { "@type": "Answer", "text": "The doctor reviews the patient at home: assessing pain and other symptoms, rationalising medication, checking nutrition and wounds where relevant, and advising the family on day-to-day care. The aim is comfort and dignity rather than repeated hospital journeys." } },
+    { "@type": "Question", "name": "Which doctors consult at the clinic?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Dr. Ammu Benoy (MBBS, MD General Medicine), Dr. Limiya Chiramel Louis (MBBS) and Dr. Paul Prince Pokkatt (MBBS)." } },
+    { "@type": "Question", "name": "Is the clinic open on Sundays and holidays?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Yes, 25th Hour Clinic is open all seven days of the week, 9:00 AM to 9:00 PM." } }
+  ]
 }
 </script>
 </head>
@@ -78,6 +138,7 @@
       <a href="#gallery" class="nav-gallery" hidden>Gallery</a>
       <a href="#book">Book</a>
       <a href="#visit">Visit Us</a>
+      <a href="#faq">FAQ</a>
       <a class="btn btn-primary btn-sm" href="tel:+918281447235">Call Now</a>
     </nav>
   </div>
@@ -461,6 +522,13 @@
             <dt>Home visits</dt>
             <dd>By appointment — please call ahead to book a slot.</dd>
           </div>
+          <div>
+            <dt>Areas we serve</dt>
+            <dd>
+              Thrippunithura, Hill Palace, Eroor, Petta, Irumpanam, Maradu, Vyttila
+              and nearby parts of Kochi and Ernakulam district.
+            </dd>
+          </div>
         </dl>
 
         <a class="btn btn-ghost" href="https://maps.app.goo.gl/pXbPbgqW6ymwcgqXA" target="_blank" rel="noopener">
@@ -478,6 +546,97 @@
             allowfullscreen></iframe>
         </div>
       </aside>
+    </div>
+  </section>
+
+  <!-- ── FAQ ────────────────────────────────────────────── -->
+  <section class="section" id="faq">
+    <div class="wrap">
+      <header class="section-head">
+        <p class="eyebrow">Common questions</p>
+        <h2>Questions patients ask us</h2>
+      </header>
+
+      <div class="faq-list">
+        <details class="faq">
+          <summary>Where is 25th Hour Clinic located?</summary>
+          <p>
+            We are at Pokkattu Building, Main Road, opposite Nadamel Church,
+            Thrippunithura, Kochi, Kerala. The clinic is easy to reach from
+            Hill Palace, Eroor, Petta, Vyttila and Irumpanam.
+          </p>
+        </details>
+
+        <details class="faq">
+          <summary>What are your consultation timings?</summary>
+          <p>
+            The clinic is open <strong>all days from 9:00 AM to 9:00 PM</strong>,
+            including Sundays. Walk-in consultations are welcome; home visits are
+            arranged by appointment.
+          </p>
+        </details>
+
+        <details class="faq">
+          <summary>Do you provide doctor home visits in Thrippunithura and Kochi?</summary>
+          <p>
+            Yes. A doctor visits the patient at home, by appointment, across
+            Thrippunithura and nearby parts of Kochi and Ernakulam. Home visits are
+            intended for palliative patients, bed-bound and elderly patients, people
+            recovering after hospital discharge, and anyone who cannot travel to a
+            clinic. Call <a href="tel:+918281447235">+91 82814 47235</a> to check
+            whether your location is covered.
+          </p>
+        </details>
+
+        <details class="faq">
+          <summary>How do I book an appointment?</summary>
+          <p>
+            Call or WhatsApp <a href="tel:+918281447235">+91 82814 47235</a>, or use
+            the <a href="#book">booking form</a> on this page — it opens WhatsApp with
+            your details already written out for the clinic.
+          </p>
+        </details>
+
+        <details class="faq">
+          <summary>Do I need an appointment to see a general physician?</summary>
+          <p>
+            No. You can walk in during consultation hours. Booking ahead simply means
+            less waiting, and it is required for home visits.
+          </p>
+        </details>
+
+        <details class="faq">
+          <summary>What does a palliative home care visit include?</summary>
+          <p>
+            The doctor reviews the patient at home: assessing pain and other symptoms,
+            rationalising medication, checking on nutrition and wounds where relevant,
+            and advising the family on day-to-day care. The aim is comfort and dignity
+            rather than repeated hospital journeys.
+          </p>
+        </details>
+
+        <details class="faq">
+          <summary>Which doctors consult at the clinic?</summary>
+          <p>
+            Dr. Ammu Benoy (MBBS, MD General Medicine), Dr. Limiya Chiramel Louis
+            (MBBS) and Dr. Paul Prince Pokkatt (MBBS). See <a href="#doctors">our
+            doctors</a> for details.
+          </p>
+        </details>
+
+        <details class="faq">
+          <summary>Is the clinic open on Sundays and holidays?</summary>
+          <p>
+            Yes — we are open all seven days of the week, 9:00 AM to 9:00 PM.
+          </p>
+        </details>
+      </div>
+
+      <p class="faq-foot">
+        Something not answered here? Call us on
+        <a href="tel:+918281447235">+91 82814 47235</a> — we are happy to explain
+        before you book.
+      </p>
     </div>
   </section>
 
@@ -512,6 +671,7 @@
       <a href="#gallery" class="nav-gallery" hidden>Gallery</a>
       <a href="#book">Book on WhatsApp</a>
       <a href="#visit">Visit Us</a>
+      <a href="#faq">FAQ</a>
     </nav>
   </div>
   <div class="wrap footer-legal">

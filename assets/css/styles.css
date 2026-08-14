@@ -348,6 +348,29 @@ img, svg, iframe { max-width: 100%; }
 }
 .preview-note { font-size: .82rem; text-align: center; margin: .8rem 0 0; color: var(--ink-soft); }
 
+/* ── FAQ ──────────────────────────────────────────────── */
+.faq-list { max-width: 46rem; margin-inline: auto; display: grid; gap: .7rem; }
+.faq {
+  background: #fff; border: 1px solid var(--line); border-radius: var(--radius);
+  padding: 0 1.2rem; box-shadow: var(--shadow-sm);
+  transition: border-color .18s ease;
+}
+.faq[open] { border-color: var(--clay-tint); }
+.faq summary {
+  cursor: pointer; list-style: none; padding: 1.05rem 2rem 1.05rem 0;
+  font-weight: 600; color: var(--ink); font-size: 1rem; position: relative;
+}
+.faq summary::-webkit-details-marker { display: none; }
+.faq summary::after {
+  content: ""; position: absolute; right: .2rem; top: 50%;
+  width: 10px; height: 10px; margin-top: -6px;
+  border-right: 2px solid var(--clay); border-bottom: 2px solid var(--clay);
+  transform: rotate(45deg); transition: transform .2s ease;
+}
+.faq[open] summary::after { transform: rotate(-135deg); margin-top: -2px; }
+.faq p { margin: 0 0 1.1rem; font-size: .96rem; }
+.faq-foot { text-align: center; margin: 1.8rem 0 0; font-size: .95rem; }
+
 /* Contact */
 .contact-list { margin: 1.5rem 0 1.8rem; display: grid; gap: 1.1rem; }
 .contact-list div { display: grid; grid-template-columns: 9.5rem 1fr; gap: .5rem; align-items: start; }

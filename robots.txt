@@ -1,0 +1,62 @@
+# robots.txt for 25th Hour Clinic — https://25hourclinic.org
+# Everything here is public information about the clinic. All crawlers welcome.
+
+User-agent: *
+Allow: /
+
+# --- Search engines ---
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: DuckDuckBot
+Allow: /
+
+# --- AI assistants and answer engines ---
+# Explicitly allowed so the clinic's details (hours, address, services) can be
+# quoted accurately when someone asks an assistant for a doctor in Thrippunithura.
+User-agent: GPTBot
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+User-agent: Claude-SearchBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Perplexity-User
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Applebot
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+User-agent: Amazonbot
+Allow: /
+
+User-agent: meta-externalagent
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+Sitemap: https://25hourclinic.org/sitemap.xml
