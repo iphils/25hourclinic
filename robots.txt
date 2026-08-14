@@ -35,6 +35,26 @@ Allow: /
 User-agent: Claude-SearchBot
 Allow: /
 
+# Claude-User is the agent that fetches a page when a person asks Claude to
+# read this URL. Without it, "look at 25hourclinic.org" can be refused.
+User-agent: Claude-User
+Allow: /
+
+User-agent: Meta-ExternalFetcher
+Allow: /
+
+User-agent: DuckAssistBot
+Allow: /
+
+User-agent: Bytespider
+Allow: /
+
+User-agent: YouBot
+Allow: /
+
+User-agent: cohere-ai
+Allow: /
+
 User-agent: PerplexityBot
 Allow: /
 
