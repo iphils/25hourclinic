@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>New Patient Registration — 25th Hour Clinic</title>
+<meta name="description" content="Register as a new patient at 25th Hour Clinic, Thrippunithura. Fill in your details and send them to the clinic on WhatsApp before your visit.">
+<meta name="robots" content="noindex, follow">
+<meta name="theme-color" content="#D97757">
+
+<link rel="canonical" href="https://25hourclinic.org/new-patient/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="New Patient Registration — 25th Hour Clinic">
+<meta property="og:description" content="Fill in your details and send them to the clinic on WhatsApp before your visit.">
+<meta property="og:url" content="https://25hourclinic.org/new-patient/">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/css/styles.css">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='22' fill='%23D97757'/><path d='M50 26v48M26 50h48' stroke='white' stroke-width='12' stroke-linecap='round'/></svg>">
+</head>
+<body>
+
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="site-header" id="top">
+  <div class="wrap header-inner">
+    <a class="brand" href="../">
+      <span class="brand-mark" aria-hidden="true">25<sup>th</sup></span>
+      <span class="brand-text">
+        <strong>25th Hour Clinic</strong>
+        <small>Care Beyond the Clock</small>
+      </span>
+    </a>
+
+    <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+
+    <nav class="site-nav" id="site-nav">
+      <a href="../#services">Services</a>
+      <a href="../#book">Book</a>
+      <a href="../#visit">Visit Us</a>
+      <a href="../#faq">FAQ</a>
+      <a class="btn btn-primary btn-sm" href="tel:+918281447235">Call Now</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+  <section class="section" id="new-patient">
+    <div class="wrap">
+      <header class="section-head">
+        <p class="eyebrow">New here?</p>
+        <h2>Register as a new patient</h2>
+        <p class="section-sub">
+          Fill in your details below and tap send — WhatsApp opens with your
+          message already written out for the clinic. This saves you filling
+          in a paper form at the counter. Nothing is stored on this website.
+        </p>
+      </header>
+
+      <div class="booking">
+        <form class="booking-form" id="new-patient-form" novalidate>
+
+          <div class="field-grid">
+            <p class="field field-full">
+              <label for="np-name">Full name <span class="req" aria-hidden="true">*</span></label>
+              <input type="text" id="np-name" name="name" required autocomplete="name" placeholder="e.g. Mariam Joseph">
+            </p>
+
+            <p class="field field-sm">
+              <label for="np-age">Age</label>
+              <input type="number" id="np-age" name="age" min="0" max="120" inputmode="numeric" placeholder="e.g. 62">
+            </p>
+
+            <p class="field field-sm">
+              <label for="np-sex">Sex</label>
+              <select id="np-sex" name="sex">
+                <option value="">Select</option>
+                <option>Male</option>
+                <option>Female</option>
+                <option>Other</option>
+              </select>
+            </p>
+
+            <p class="field field-full">
+              <label for="np-phone">Phone number</label>
+              <input type="tel" id="np-phone" name="phone" inputmode="tel"
+                     autocomplete="tel" placeholder="e.g. 98470 12345">
+            </p>
+
+            <p class="field field-full">
+              <label for="np-address">Address</label>
+              <textarea id="np-address" name="address" rows="3"
+                placeholder="House name, street, area and PIN code"></textarea>
+            </p>
+          </div>
+
+          <p class="form-error" id="np-form-error" role="alert" hidden></p>
+
+          <button type="submit" class="btn btn-whatsapp btn-block">
+            <svg viewBox="0 0 24 24" aria-hidden="true" class="wa-icon"><path d="M12 2a10 10 0 0 0-8.6 15l-1.3 4.7 4.8-1.3A10 10 0 1 0 12 2zm5.3 14.1c-.2.6-1.2 1.2-1.7 1.2-.5.1-1 .1-1.6-.1-.4-.1-.9-.3-1.5-.6-2.6-1.1-4.3-3.8-4.5-4-.1-.2-1-1.4-1-2.6s.6-1.8.9-2.1c.2-.2.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 1.9c.1.2 0 .4-.1.5l-.3.4c-.1.1-.3.3-.1.6.1.2.6 1 1.3 1.6.9.8 1.6 1 1.9 1.2.2.1.4 0 .5-.1l.6-.8c.2-.2.3-.2.6-.1l1.8.9c.2.1.4.2.5.3.1.2.1.6-.1 1.2z"/></svg>
+            Send on WhatsApp
+          </button>
+
+          <p class="form-foot">
+            Opens WhatsApp to <strong>+91 82814 47235</strong>. You still tap send there,
+            so you can review the message first.
+          </p>
+        </form>
+
+        <aside class="booking-preview">
+          <div class="phone-preview">
+            <div class="phone-bar">
+              <span class="phone-avatar" aria-hidden="true">25</span>
+              <span class="phone-name">25th Hour Clinic<small>online</small></span>
+            </div>
+            <div class="phone-body">
+              <div class="bubble" id="np-message-preview">Fill the form to see your message.</div>
+            </div>
+          </div>
+          <p class="preview-note">Live preview of the message the clinic will receive.</p>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap footer-inner">
+    <div class="footer-brand">
+      <strong>25th Hour Clinic</strong>
+      <p>Physician consultation &amp; doctor home care visits for palliative patients, at affordable prices.</p>
+      <p class="footer-contact">
+        Pokkattu Building, Main Road, Opposite Nadamel Church, Thrippunithura, Kochi, Kerala<br>
+        <a href="tel:+918281447235">+91 82814 47235</a> &middot; Open all days, 9 AM – 9 PM
+      </p>
+    </div>
+    <nav class="footer-nav" aria-label="Footer">
+      <a href="../#services">Services</a>
+      <a href="../#book">Book on WhatsApp</a>
+      <a href="../#visit">Visit Us</a>
+      <a href="../#faq">FAQ</a>
+    </nav>
+  </div>
+  <div class="wrap footer-legal">
+    <p>&copy; <span id="year">2026</span> 25th Hour Clinic. All rights reserved.</p>
+  </div>
+</footer>
+
+<div class="fab-bar">
+  <a class="fab fab-call" href="tel:+918281447235" aria-label="Call the clinic">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 10.8a15 15 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.58 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1 11.4 11.4 0 0 0 .58 3.6 1 1 0 0 1-.25 1z"/></svg>
+    <span>Call</span>
+  </a>
+  <a class="fab fab-whatsapp" href="https://wa.me/918281447235" target="_blank" rel="noopener" aria-label="Message the clinic on WhatsApp">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15l-1.3 4.7 4.8-1.3A10 10 0 1 0 12 2zm5.3 14.1c-.2.6-1.2 1.2-1.7 1.2-.5.1-1 .1-1.6-.1-.4-.1-.9-.3-1.5-.6-2.6-1.1-4.3-3.8-4.5-4-.1-.2-1-1.4-1-2.6s.6-1.8.9-2.1c.2-.2.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 1.9c.1.2 0 .4-.1.5l-.3.4c-.1.1-.3.3-.1.6.1.2.6 1 1.3 1.6.9.8 1.6 1 1.9 1.2.2.1.4 0 .5-.1l.6-.8c.2-.2.3-.2.6-.1l1.8.9c.2.1.4.2.5.3.1.2.1.6-.1 1.2z"/></svg>
+    <span>WhatsApp</span>
+  </a>
+</div>
+
+<script src="../assets/js/main.js" defer></script>
+<script>
+(function () {
+  "use strict";
+  var CLINIC_WA = "918281447235";
+  var form = document.getElementById("new-patient-form");
+  if (!form) return;
+
+  var preview = document.getElementById("np-message-preview");
+  var errorBox = document.getElementById("np-form-error");
+
+  var val = function (name) {
+    var el = form.elements[name];
+    if (!el) return "";
+    return el.value
+      .trim()
+      .replace(/\s*\n+\s*/g, function (match, offset, whole) {
+        return /[.,;:!?—-]$/.test(whole.slice(0, offset).trim()) ? " " : ", ";
+      })
+      .replace(/[ \t]{2,}/g, " ");
+  };
+
+  var buildMessage = function () {
+    var age = val("age");
+    var sex = val("sex");
+    var lines = [
+      "*NEW PATIENT REGISTRATION*",
+      "_Sent from the 25th Hour Clinic website_",
+      "",
+      "• Name: " + (val("name") || "—"),
+      "• Age: " + (age || "—"),
+      "• Sex: " + (sex || "—"),
+      "• Phone: " + (val("phone") || "—"),
+      "• Address: " + (val("address") || "—")
+    ];
+    return lines.join("\n");
+  };
+
+  var refreshPreview = function () {
+    preview.textContent = buildMessage();
+  };
+
+  form.addEventListener("input", refreshPreview);
+
+  form.addEventListener("submit", function (e) {
+    e.preventDefault();
+
+    if (!form.checkValidity()) {
+      form.classList.add("was-validated");
+      var firstInvalid = form.querySelector("input:invalid, select:invalid, textarea:invalid");
+      errorBox.textContent = "Please enter your full name before sending.";
+      errorBox.hidden = false;
+      if (firstInvalid) firstInvalid.focus({ preventScroll: false });
+      return;
+    }
+    errorBox.hidden = true;
+
+    var url = "https://wa.me/" + CLINIC_WA + "?text=" + encodeURIComponent(buildMessage());
+    window.open(url, "_blank", "noopener");
+  });
+
+  refreshPreview();
+})();
+</script>
+</body>
+</html>
