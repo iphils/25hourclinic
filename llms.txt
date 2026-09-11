@@ -36,9 +36,23 @@
 
 ## Areas served
 
-Thrippunithura and the surrounding parts of Kochi and Ernakulam district in
-Kerala, including Hill Palace, Eroor, Maradu, Vyttila, Kangarappady, Petta and
-Irumpanam. Home visits are arranged by appointment — please call to confirm
+The clinic is in Thrippunithura; doctors travel out from there for home visits
+across roughly a 15 km radius of Ernakulam district, Kerala.
+
+- **Thrippunithura and immediately around:** Thrippunithura, Karingachira,
+  Thekkumbagam, Eroor, Hill Palace, Puthiya Road, Petta, Vadakkekotta, Statue
+  Junction, Irumpanam, Poonithura, Kannankulangara.
+- **Towards Udayamperoor and Chottanikkara:** Udayamperoor, Thiruvankulam,
+  Chottanikkara, Mulanthuruthy, Kureekkad, Amballoor, Aikaranad, Pattimattom,
+  Puthencruz, Vadayampady.
+- **Kakkanad and the Infopark side:** Kakkanad, Infopark, Thrikkakara,
+  Vazhakkala, Padamugal, Kangarappady, Chittethukara, Palachuvadu,
+  Seaport–Airport Road, Palarivattom.
+- **Vyttila, Maradu and the backwater side:** Vyttila, Maradu, Kundannoor,
+  Nettoor, Panangad, Kumbalam, Kadavanthra, Elamkulam, Edappally, Kaloor.
+
+Locations outside this list within Ernakulam district may still be possible.
+Home visits are arranged by appointment — please call +91 82814 47235 to confirm
 whether a location is covered.
 
 ## Booking
@@ -59,4 +73,5 @@ address. No patient data is stored on the website.
 
 ## Pages
 
-- [Homepage](https://25hourclinic.org/): services, doctors, photos, booking form, location and hours.
+- [Homepage](https://25hourclinic.org/): services, doctors, areas served, photos, booking form, location and hours.
+- [Areas we serve](https://25hourclinic.org/#areas): the full list of localities covered for home visits.
