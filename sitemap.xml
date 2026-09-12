@@ -12,4 +12,24 @@
       <image:caption>The entrance of 25th Hour Clinic on Main Road, opposite Nadamel Church, Thrippunithura, Kochi.</image:caption>
     </image:image>
   </url>
+  <url>
+    <loc>https://25hourclinic.org/doctors/dr-limiya-chiramel-louis/</loc>
+    <lastmod>2026-09-12</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+    <image:image>
+      <image:loc>https://25hourclinic.org/assets/img/drlimiya.jpeg</image:loc>
+      <image:title>Dr. Limiya Chiramel Louis, MBBS, General Practitioner</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://25hourclinic.org/doctors/dr-paul-prince-pokkatt/</loc>
+    <lastmod>2026-09-12</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+    <image:image>
+      <image:loc>https://25hourclinic.org/assets/img/dr-paul.jpeg</image:loc>
+      <image:title>Dr. Paul Prince Pokkatt, MBBS, General Practitioner</image:title>
+    </image:image>
+  </url>
 </urlset>
